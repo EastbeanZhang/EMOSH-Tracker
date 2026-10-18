@@ -18,13 +18,14 @@ The final bundled examples also passed **42/42 runs**, with no failures. These u
 
 [resolution_validation.json](resolution_validation.json) records all 49 final runs, including file hashes, modes, dimensions, frame counts, frame rates, fitting steps, elapsed time, and allocator peaks. Representative input/mesh/overlay frames were reviewed for all 42 matrix cases. Native video previews were also inspected around the fitting-window boundary. Face, visible-hand, and body alignment remained consistent across the tested canvases. Unobserved limbs remain ambiguous: the cropped upper-body example produced an incorrect extra visible arm under ordinary body fitting, so its documented command uses the existing portrait objective with out-of-frame hand priors.
 
-Peak allocated PyTorch GPU memory ranged from **7.93 to 8.23 GiB**; peak reserved memory ranged from **8.16 to 8.50 GiB**. The largest values were 8,833,624,576 and 9,130,999,808 bytes. These are process-local allocator measurements for the tested images and clips, not a universal VRAM minimum. They exclude other processes and non-PyTorch allocations. Timing was collected under concurrent workloads and is not a speed benchmark.
+Peak allocated PyTorch GPU memory ranged from **7.93 to 8.23 GiB**; peak reserved memory ranged from **8.16 to 8.50 GiB**. The largest values were 8,833,624,576 and 9,130,999,808 bytes, recorded for the two full-body video excerpts at a 1920×1080 tracking canvas. Each excerpt contained eight frames at 30 FPS (0.27 s), with 1,251 optimization steps. Their source dimensions were 460×640 and 384×640; the canvas used aspect-preserving scaling and padding. The four native-resolution full-video tests each contained 48 frames (1.60–2.00 s), using fitting windows of 32 and 16 frames. These are process-local allocator measurements for the tested images and clips, not a universal VRAM minimum. They exclude other processes and non-PyTorch allocations. Timing was collected under concurrent workloads and is not a speed benchmark.
 
 The renderer uses unbinned rasterization to avoid dropping triangles when a dense body mesh exceeds coarse-bin capacity. Previews were inspected against the input after that change.
 
 ## Reproduce
 
 ```bash
+python -m pip install -r requirements-dev.txt
 python track.py --check-assets
 python -m pytest -q tests
 ruff check .

@@ -1,6 +1,6 @@
 # Installation
 
-Tracking requires Linux and an NVIDIA CUDA GPU. Python 3.10 is the intended runtime. The models are initialized together. The tested examples peaked at **8.23 GiB allocated / 8.50 GiB reserved** in the PyTorch CUDA allocator; allow additional headroom for the CUDA runtime and larger inputs. Use a separate environment and start with a short clip.
+Tracking requires Linux and an NVIDIA CUDA GPU. Python 3.10 is the intended runtime. The models are initialized together. An 8-frame full-body excerpt at 30 FPS (0.27 s), fitted on a 1920×1080 canvas with the default 1,251 optimization steps, peaked at **8.23 GiB allocated / 8.50 GiB reserved** in the PyTorch CUDA allocator. Its source was a portrait-format clip fitted with uniform scaling and padding, rather than native 1080p footage. Allow additional headroom for the CUDA runtime, longer clips, and larger inputs. Use a separate environment and start with a short clip.
 
 ```bash
 git clone https://github.com/EastbeanZhang/EMOSH-Tracker.git
