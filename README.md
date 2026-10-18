@@ -2,15 +2,13 @@
 
 # EMOSH-Tracker
 
-### Expressive human tracking across full-body, upper-body, and portrait scenes
-
-**[EMOSH · ECCV 2026](https://arxiv.org/abs/2606.28026)**
+### Official Human Tracking Implementation for EMOSH (ECCV 2026)
 
 [Project Page](https://eastbeanzhang.github.io/EMOSH/) · [Paper](https://arxiv.org/abs/2606.28026) · [Installation](docs/installation.md) · [Models](docs/models.md)
 
 </div>
 
-EMOSH-Tracker recovers **body pose, articulated hands, facial expression, identity shape, and camera parameters** from single-person images and videos. It builds on [EHM-Tracker](https://github.com/Pixel-Talk/EHM-Tracker), released with GUAVA, using the joint fitting framework introduced in EMOSH.
+Tracks expressive body, hand, and face motion from full-body, upper-body, and portrait images or videos, with joint fitting and flexible input resolutions.
 
 <p align="center">
   <a href="assets/previews/full_body_motion.gif"><img src="assets/previews/gallery_full_body.gif" width="49%" alt="Full-body tracking, first performer"></a>
