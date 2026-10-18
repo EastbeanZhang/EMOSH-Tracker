@@ -24,21 +24,21 @@
     "video_frames_per_case": 8
   },
   "bundled_example_matrix": {
-    "passed": 36,
+    "passed": 42,
     "failed": 0,
     "steps": 1251,
     "video_frames_per_case": 8,
     "record": "resolution_validation.json"
   },
   "complete_video_examples": {
-    "passed": 3,
+    "passed": 4,
     "frames_per_clip": 48,
     "optimization_batch_size": 32
   },
   "native_image_examples": {
     "passed": 3
   },
-  "preview_visual_review": "representative_frame_for_all_36_cases_and_native_window_boundaries",
+  "preview_visual_review": "representative_frame_for_all_42_cases_and_native_window_boundaries",
   "gpu_memory_bytes": {
     "max_peak_allocated": 8833624576,
     "max_peak_reserved": 9130999808

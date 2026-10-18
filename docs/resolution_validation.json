@@ -838,6 +838,144 @@
       },
       "checks": "passed",
       "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion_2.mp4",
+      "input_sha256": "90a449a7b8e55eab4f285d204f324db29b6888ecd5e689323d4ed4c4bcb7368d",
+      "size": [
+        832,
+        480
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        384,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 213.792,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8904507392
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion_2.mp4",
+      "input_sha256": "90a449a7b8e55eab4f285d204f324db29b6888ecd5e689323d4ed4c4bcb7368d",
+      "size": [
+        641,
+        479
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        384,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 70.405,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8904507392
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion_2.mp4",
+      "input_sha256": "90a449a7b8e55eab4f285d204f324db29b6888ecd5e689323d4ed4c4bcb7368d",
+      "size": [
+        360,
+        640
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        384,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 109.246,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8904507392
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion_2.mp4",
+      "input_sha256": "90a449a7b8e55eab4f285d204f324db29b6888ecd5e689323d4ed4c4bcb7368d",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        384,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 133.684,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8833624576,
+        "peak_reserved": 9130999808
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion_2.mp4",
+      "input_sha256": "90a449a7b8e55eab4f285d204f324db29b6888ecd5e689323d4ed4c4bcb7368d",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        384,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 212.783,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8904507392
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion_2.mp4",
+      "input_sha256": "90a449a7b8e55eab4f285d204f324db29b6888ecd5e689323d4ed4c4bcb7368d",
+      "size": [
+        640,
+        360
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        384,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 69.655,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8904507392
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
     }
   ],
   "native_examples": [
@@ -980,6 +1118,28 @@
       "tracking_size": [
         400,
         480
+      ],
+      "optimization_batch_size": 32
+    },
+    {
+      "case": "full_body_motion_2.mp4",
+      "input_sha256": "90a449a7b8e55eab4f285d204f324db29b6888ecd5e689323d4ed4c4bcb7368d",
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        384,
+        640
+      ],
+      "frame_count": 48,
+      "fps": 30.0,
+      "elapsed_seconds": 260.063,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8574875136,
+        "peak_reserved": 8902410240
+      },
+      "tracking_size": [
+        384,
+        640
       ],
       "optimization_batch_size": 32
     }
