@@ -23,11 +23,9 @@ Tracks expressive body, hand, and face motion from full-body, upper-body, and po
 
 ## From EHM-Tracker to EMOSH-Tracker
 
-- **Unified fitting.** Jointly optimize body, hands, face, identity, and camera parameters, replacing GUAVA's cascaded facial-then-body fitting.
-- **Visibility-aware tracking.** Confidence-aware Validity Gating filters unreliable face/hand guidance and falls back to priors under occlusion or large head rotations. The paper compares full-body, half-body, and close-up scenes, showing fewer foot/hand deviations, hallucinated occluded arms, and close-up failures.
-- **Faster fitting in the paper's comparison.** On the same 436-frame video, EMOSH takes **223 s (1.96 FPS)** versus GUAVA's **424 s (1.03 FPS)**: approximately **1.9×** faster.
-- **Flexible image geometry in this release.** Native dimensions or a custom **width × height**, with aspect-preserving fitting, explicit camera transforms, exact odd-sized exports, and preserved frame coverage/FPS.
-- **A focused inference release.** One image/video CLI, checked model files, an isolated installation recipe, and runnable examples for all three scene types.
+1. **Better tracking across scenes.** More reliable full-body, upper-body, and portrait fitting, including occlusions and large head rotations.
+2. **Faster fitting.** Approximately **1.9×** faster on the same 436-frame video: **223 s** versus **424 s** for GUAVA/EHM-Tracker.
+3. **Flexible input resolutions.** Supports square, portrait, and landscape inputs at native or custom resolutions, preserving aspect ratio and output dimensions.
 
 [Method and comparison details](docs/comparison.md) · [Tested inputs and limitations](docs/validation.md)
 
