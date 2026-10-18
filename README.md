@@ -37,7 +37,9 @@ GVHMR, HaMeR, and TEASER initialize body, hands, and face. DWPose and dense faci
 
 ## Get started
 
-**Linux + NVIDIA CUDA GPU · Python 3.10.** The verified isolated environment uses PyTorch 2.9.1/CUDA 13.0 and PyTorch3D 0.7.9. An **8-frame excerpt at 30 FPS (0.27 s)**, fitted on a **1920×1080 canvas** with 1,251 optimization steps, peaked at **8.23 GiB allocated / 8.50 GiB reserved**. Leave additional GPU memory headroom.
+**Linux + NVIDIA CUDA GPU · Python 3.10.** The verified isolated environment uses PyTorch 2.9.1/CUDA 13.0 and PyTorch3D 0.7.9.
+
+**GPU memory:** approximately **10.70 GiB sampled process peak** on a **15-second, 450-frame 1920×1080 video at 30 FPS** (`--head-only`, 32-frame windows, 1,251 steps per window). [Measurement details](docs/validation.md#long-video-memory-test). Leave additional memory headroom.
 
 1. Follow [installation](docs/installation.md) to create the environment and install the pinned dependencies.
 2. Download the licensed models using the [file list and official download links](docs/models.md).

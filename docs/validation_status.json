@@ -41,9 +41,28 @@
   "preview_visual_review": "representative_frame_for_all_42_cases_and_native_window_boundaries",
   "gpu_memory_bytes": {
     "max_peak_allocated": 8833624576,
-    "max_peak_reserved": 9130999808
+    "max_peak_reserved": 9133096960
   },
   "python_compilation": "passed",
   "example_shell_syntax": "passed",
-  "source_package_ready": true
+  "source_package_ready": true,
+  "last_updated": "2026-10-19",
+  "long_video_memory_test": {
+    "passed": true,
+    "record": "long_clip_memory.json",
+    "frame_count": 450,
+    "fps": 30,
+    "duration_seconds": 15,
+    "native_size": [
+      1920,
+      1080
+    ],
+    "mode": "head",
+    "steps_per_window": 1251,
+    "optimization_batch_size": 32,
+    "gpu_memory_bytes": {
+      "peak_allocated": 8829762560,
+      "peak_reserved": 9133096960
+    }
+  }
 }

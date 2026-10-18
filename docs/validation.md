@@ -22,6 +22,41 @@ Peak allocated PyTorch GPU memory ranged from **7.93 to 8.23 GiB**; peak reserve
 
 The renderer uses unbinned rasterization to avoid dropping triangles when a dense body mesh exceeds coarse-bin capacity. Previews were inspected against the input after that change.
 
+## Long video memory test
+
+A separate **15.00-second, 450-frame test at 30 FPS** used native **1920×1080 input and tracking dimensions**, with `--head-only`, an inference batch size of four, and the default **32-frame fitting window / 1,251 steps per window**. All 15 windows completed: fourteen windows of 32 frames and a final two-frame window. Initialization processed the complete clip; measurement included model loading, fitting, visualization and per-frame export in a fresh process.
+
+| Measurement | Peak |
+| --- | ---: |
+| PyTorch allocated | **8.22 GiB** |
+| PyTorch reserved | **8.51 GiB** |
+| Sampled process memory, including other CUDA allocations | approximately **10.70 GiB** |
+
+All **450 frames** passed finite-parameter, positive-focal-length, camera-transform, frame-coverage, 30 FPS and exact-export-dimension checks. Input, mesh and overlay PNGs were verified at 1920×1080; the three-panel video was verified at 5760×1080. [Machine-readable results and hashes](long_clip_memory.json) record the input, output, measurements and sampling conditions.
+
+The input is a continuous 15-second excerpt beginning at 20.02 seconds of [NASA's Kelsey Young interview](https://svs.gsfc.nasa.gov/14934), retaining the source's native dimensions and resampling approximately 23.98 FPS to 30 FPS. The source is public-domain NASA media. The test uses the portrait objective; other scene types and settings can have different peaks. PyTorch allocator peaks exclude other processes and non-PyTorch allocations. Process-memory sampling includes non-PyTorch allocations but its approximately one-second interval can miss brief peaks. Keep additional GPU memory headroom. Runtime under concurrent workloads is not a speed benchmark.
+
+To reproduce in the documented environment:
+
+```bash
+curl -L 'https://svs.gsfc.nasa.gov/vis/a010000/a014900/a014934/Kelsey_Young__SOTs_Artemis_II_1.webm' -o kelsey.webm
+tracker_ffmpeg="$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')"
+"$tracker_ffmpeg" -ss 20.02 -i kelsey.webm -an -vf fps=30 \
+  -frames:v 450 -c:v libx264 -crf 18 -pix_fmt yuv420p portrait_15s_30fps.mp4
+python track.py --input portrait_15s_30fps.mp4 --output results/memory_15s \
+  --target-size 1920 1080 --head-only --steps 1251 \
+  --optimization-batch-size 32 --inference-batch-size 4 --visualize --save-images
+python scripts/verify_result.py results/memory_15s/portrait_15s_30fps
+```
+
+The result's `metadata.json` records `gpu_memory_bytes.peak_allocated` and `peak_reserved` in bytes. To sample total process GPU memory, run the following in a second terminal while tracking is active:
+
+```bash
+nvidia-smi --query-compute-apps=pid,used_gpu_memory --format=csv --loop=1
+```
+
+Record the maximum for the tracker Python process's PID. Do not sum other processes; the reported MiB value divided by 1,024 gives GiB. A fresh output directory and a separate process keep the measurement independent of earlier clips.
+
 ## Reproduce
 
 ```bash
@@ -37,4 +72,3 @@ bash scripts/run_examples.sh
 The matrix validates its exports automatically. To check a manually run case, include `--visualize --save-images`, then run `python scripts/verify_result.py /path/to/result/input_stem`.
 
 Successful execution and consistent camera geometry do not guarantee accurate motion for every image. Small faces/hands, occlusion, back views, motion blur, and ambiguous body shape can still degrade estimates. Fitting windows share identity but have no temporal loss across their boundaries; a small pose discontinuity can remain there. Long-clip memory use also depends on the complete-sequence body initializer. No calibrated tracking-accuracy or speed benchmark is claimed.
-

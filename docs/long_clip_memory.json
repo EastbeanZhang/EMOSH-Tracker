@@ -1,0 +1,79 @@
+{
+  "source_page": "https://svs.gsfc.nasa.gov/14934",
+  "download_url": "https://svs.gsfc.nasa.gov/vis/a010000/a014900/a014934/Kelsey_Young__SOTs_Artemis_II_1.webm",
+  "source_sha256": "8a4441b32b632485b95e8888b01748ac52fa20c26e4cea26abdb8537e5a689c3",
+  "author": "NASA\u2019s Goddard Space Flight Center",
+  "license": "Public domain",
+  "source_start_seconds": 20.02,
+  "source_fps": 23.98,
+  "input_fps": 30,
+  "input_frame_count": 450,
+  "input_duration_seconds": 15.0,
+  "input_size": [
+    1920,
+    1080
+  ],
+  "input_sha256": "d96b72d03089879f855731cb9652b0454a90d1fa85ab4457e1c40c0188176d42",
+  "changes": "Continuous 15-second excerpt at native 1920x1080 dimensions; resampled from approximately 23.98 to 30 FPS, without audio.",
+  "returncode": 0,
+  "wall_seconds": 2731.748,
+  "sampled_process_peak_mib": 10960,
+  "process_memory_samples": 2370,
+  "process_memory_sampling_interval_seconds": 1,
+  "tracking": {
+    "mode": "head",
+    "steps": 1251,
+    "optimization_batch_size": 32,
+    "frame_count": 450,
+    "fps": 30.0,
+    "source_size": [
+      1920,
+      1080
+    ],
+    "tracking_size": [
+      1920,
+      1080
+    ],
+    "elapsed_seconds": 2717.353,
+    "gpu_memory_bytes": {
+      "peak_allocated": 8829762560,
+      "peak_reserved": 9133096960
+    },
+    "completed": true
+  },
+  "verification_returncode": 0,
+  "verification_summary": "Verified 450 frames",
+  "fitting_windows": {
+    "full_windows": 14,
+    "frames_per_full_window": 32,
+    "final_window_frames": 2
+  },
+  "artifact_sha256": {
+    "tracking.mp4": "407f1d8b08e17412969ff4c60eb86ea31ec3320582399ddeca211b3a790f6c55",
+    "optim_tracking.npy": "a3b101d3d2e11e0376e2127a61aa3d351b97139015f9eee1e341ac56bc56b2e9",
+    "id_share_params.npy": "5905ce8fb74fab4c4b76f37302d38c2446c78f1bfc4b52e8f34542787dd577bb"
+  },
+  "runtime_source_sha256": "033970796b9146b3959f9f807bbf0c7e31c5c3a56dfeebc104fdd28980f686cc",
+  "date": "2026-10-19",
+  "case": "portrait_15s_30fps.mp4",
+  "measurement_notes": [
+    "Complete initialization, 15 fitting windows and visualization/export in one fresh process.",
+    "Fourteen 32-frame fitting windows and a final two-frame window; 1,251 steps per window.",
+    "PyTorch peaks cover this process only; sampled process memory also includes non-PyTorch CUDA allocations.",
+    "Process memory is sampled at approximately one-second intervals and can miss briefer peaks.",
+    "One portrait scene using --head-only; these values are not a universal VRAM minimum.",
+    "Elapsed time was measured under concurrent workloads and is not a speed benchmark."
+  ],
+  "preview_visual_review_frames": [
+    0,
+    31,
+    32,
+    127,
+    128,
+    255,
+    256,
+    447,
+    448,
+    449
+  ]
+}

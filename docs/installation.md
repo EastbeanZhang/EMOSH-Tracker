@@ -1,6 +1,6 @@
 # Installation
 
-Tracking requires Linux and an NVIDIA CUDA GPU. Python 3.10 is the intended runtime. The models are initialized together. An 8-frame full-body excerpt at 30 FPS (0.27 s), fitted on a 1920×1080 canvas with the default 1,251 optimization steps, peaked at **8.23 GiB allocated / 8.50 GiB reserved** in the PyTorch CUDA allocator. Its source was a portrait-format clip fitted with uniform scaling and padding, rather than native 1080p footage. Allow additional headroom for the CUDA runtime, longer clips, and larger inputs. Use a separate environment and start with a short clip.
+Tracking requires Linux and an NVIDIA CUDA GPU. Python 3.10 is the intended runtime. A **15-second portrait video (450 frames at 30 FPS)** with **1920×1080 input and fitting dimensions** reached approximately **10.70 GiB sampled process GPU memory**, using `--head-only`, 32-frame windows and 1,251 steps per window. PyTorch recorded **8.22 GiB allocated / 8.51 GiB reserved**. Allow additional memory headroom for your input and configuration. See the [complete measurement and reproduction commands](validation.md#long-video-memory-test).
 
 ```bash
 git clone https://github.com/EastbeanZhang/EMOSH-Tracker.git
@@ -32,4 +32,3 @@ PyTorch3D builds for the visible GPU by default. Set `TORCH_CUDA_ARCH_LIST` only
 For a different CUDA/PyTorch combination, build PyTorch3D against the matching toolkit in the same environment. See [PyTorch compatibility](https://pytorch.org/get-started/previous-versions/).
 
 MediaPipe uses `opencv-contrib-python`; do not install a second OpenCV wheel into the same environment. On a minimal Linux host, install the system runtime libraries `libgl1`, `libglib2.0-0`, and a C++ build toolchain if they are absent. `imageio-ffmpeg` supplies the FFmpeg executable used for previews.
-
