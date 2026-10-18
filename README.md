@@ -12,9 +12,23 @@
 
 EMOSH-Tracker recovers **body pose, articulated hands, facial expression, identity shape, and camera parameters** from single-person images and videos. It builds on [EHM-Tracker](https://github.com/Pixel-Talk/EHM-Tracker), released with GUAVA, using the joint fitting framework introduced in EMOSH.
 
-| Full body | Upper body | Portrait |
-| :---: | :---: | :---: |
-| ![Full-body tracking](assets/previews/full_body_motion.gif) | ![Upper-body tracking](assets/previews/upper_body_motion.gif) | ![Portrait tracking](assets/previews/head_motion.gif) |
+### Full body
+
+<p align="center">
+  <img src="assets/previews/full_body_motion.gif" width="100%" alt="Full-body tracking: input, mesh, and overlay">
+</p>
+
+### Upper body
+
+<p align="center">
+  <img src="assets/previews/upper_body_motion.gif" width="100%" alt="Upper-body tracking: input, mesh, and overlay">
+</p>
+
+### Portrait
+
+<p align="center">
+  <img src="assets/previews/head_motion.gif" width="100%" alt="Portrait tracking: input, mesh, and overlay">
+</p>
 
 **Input → mesh → overlay.** Actual outputs from the bundled videos at the default 1,251 fitting steps; GIFs are resized and frame-sampled. [Media sources and licenses](assets/PROVENANCE.md).
 
