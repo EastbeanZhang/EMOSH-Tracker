@@ -1,0 +1,52 @@
+[
+  {
+    "path": "flame/203_landmark_embeding.npz",
+    "url": "https://raw.githubusercontent.com/Pixel-Talk/EHM-Tracker/176f4d88a4fa9e73f00d102a8e924be5209b0d0c/assets/FLAME/203_landmark_embeding.npz",
+    "git_blob_sha1": "0dd38b93fc3afea2e503171635b8822429799aa5"
+  },
+  {
+    "path": "flame/landmark_embedding.npy",
+    "url": "https://raw.githubusercontent.com/Pixel-Talk/EHM-Tracker/176f4d88a4fa9e73f00d102a8e924be5209b0d0c/assets/FLAME/landmark_embedding.npy",
+    "git_blob_sha1": "40fe5090e02461c86d8c1831466ac22a4cae70c4"
+  },
+  {
+    "path": "flame/mediapipe_landmark_embedding.npz",
+    "url": "https://raw.githubusercontent.com/Pixel-Talk/EHM-Tracker/176f4d88a4fa9e73f00d102a8e924be5209b0d0c/assets/FLAME/mediapipe_landmark_embedding.npz",
+    "git_blob_sha1": "166948d07c29800ed11d8e6d78f9e766cdaa1f96"
+  },
+  {
+    "path": "flame/l_eyelid.npy",
+    "url": "https://raw.githubusercontent.com/Pixel-Talk/EHM-Tracker/176f4d88a4fa9e73f00d102a8e924be5209b0d0c/assets/FLAME/l_eyelid.npy",
+    "git_blob_sha1": "2832f038ed11a28c3ecf033044ebff59b8a571b8"
+  },
+  {
+    "path": "flame/r_eyelid.npy",
+    "url": "https://raw.githubusercontent.com/Pixel-Talk/EHM-Tracker/176f4d88a4fa9e73f00d102a8e924be5209b0d0c/assets/FLAME/r_eyelid.npy",
+    "git_blob_sha1": "344e84de836c680d4b6e5f2b45fd11bc8af621b1"
+  },
+  {
+    "path": "smplx/SMPL-X__FLAME_vertex_ids.npy",
+    "url": "https://raw.githubusercontent.com/Pixel-Talk/EHM-Tracker/176f4d88a4fa9e73f00d102a8e924be5209b0d0c/assets/SMPLX/SMPL-X__FLAME_vertex_ids.npy",
+    "git_blob_sha1": "ee849cea1e785964fe9f82acf67265b74cf93b5e"
+  },
+  {
+    "path": "smplx/MANO_SMPLX_vertex_ids.pkl",
+    "url": "https://raw.githubusercontent.com/Pixel-Talk/EHM-Tracker/176f4d88a4fa9e73f00d102a8e924be5209b0d0c/assets/SMPLX/MANO_SMPLX_vertex_ids.pkl",
+    "git_blob_sha1": "cc51ada6c0b39642e321bfc440c5675e9e51943e"
+  },
+  {
+    "path": "mano/selected_hand_ver.npy",
+    "url": "https://raw.githubusercontent.com/Pixel-Talk/EHM-Tracker/176f4d88a4fa9e73f00d102a8e924be5209b0d0c/assets/MANO/selected_hand_ver.npy",
+    "git_blob_sha1": "fdea286d46f1fb63eae8afecd431b98c99808606"
+  },
+  {
+    "path": "smplx/smplx_extra_joints.yaml",
+    "url": "https://raw.githubusercontent.com/Pixel-Talk/EHM-Tracker/176f4d88a4fa9e73f00d102a8e924be5209b0d0c/assets/SMPLX/smplx_extra_joints.yaml",
+    "git_blob_sha1": "cb155bf01e16bd5ed9924cce562f569faf2959b1"
+  },
+  {
+    "path": "smplx/SMPLX_to_J14.pkl",
+    "url": "https://raw.githubusercontent.com/Pixel-Talk/EHM-Tracker/176f4d88a4fa9e73f00d102a8e924be5209b0d0c/assets/SMPLX/SMPLX_to_J14.pkl",
+    "git_blob_sha1": "2ea2e8984f00a477646bd8065cac825e684e1518"
+  }
+]

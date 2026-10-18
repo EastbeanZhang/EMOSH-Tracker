@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-18",
+  "environment": {
+    "python": "3.10.18",
+    "torch": "2.9.1+cu130",
+    "cuda_toolkit": "13.0",
+    "pytorch3d": "0.7.9",
+    "isolated": true
+  },
+  "tests": {
+    "passed": 105,
+    "skipped": 0,
+    "cuda_rendering_cases": 14,
+    "licensed_decoder_included": true,
+    "elapsed_seconds": 6.74
+  },
+  "static_checks": "passed",
+  "formatting": "passed",
+  "required_model_files": 26,
+  "support_files_verified": 10,
+  "research_sample_matrix": {
+    "passed": 30,
+    "steps": 1251,
+    "video_frames_per_case": 8
+  },
+  "bundled_example_matrix": {
+    "passed": 36,
+    "failed": 0,
+    "steps": 1251,
+    "video_frames_per_case": 8,
+    "record": "resolution_validation.json"
+  },
+  "complete_video_examples": {
+    "passed": 3,
+    "frames_per_clip": 48,
+    "optimization_batch_size": 32
+  },
+  "native_image_examples": {
+    "passed": 3
+  },
+  "preview_visual_review": "representative_frame_for_all_36_cases_and_native_window_boundaries",
+  "gpu_memory_bytes": {
+    "max_peak_allocated": 8833624576,
+    "max_peak_reserved": 9130999808
+  },
+  "python_compilation": "passed",
+  "example_shell_syntax": "passed",
+  "source_package_ready": true
+}

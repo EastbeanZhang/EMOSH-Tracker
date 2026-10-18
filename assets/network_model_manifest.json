@@ -1,0 +1,47 @@
+[
+  {
+    "path": "hamer/hamer_ckpts/checkpoints/hamer.ckpt",
+    "source_url": "https://huggingface.co/spaces/geopavlakos/HaMeR/resolve/main/_DATA/hamer_ckpts/checkpoints/hamer.ckpt?download=true",
+    "sha256": "e5cc06f294d88a92dee24e603480aab04de532b49f0e08200804ee7d90e16f53",
+    "bytes": 2689536166,
+    "download_kind": "Author-hosted model file"
+  },
+  {
+    "path": "dwpose/yolox_l.onnx",
+    "source_url": "https://huggingface.co/yzd-v/DWPose/resolve/main/yolox_l.onnx?download=true",
+    "sha256": "7860ae79de6c89a3c1eb72ae9a2756c0ccfbe04b7791bb5880afabd97855a411",
+    "bytes": 216746733,
+    "download_kind": "Author-hosted model file"
+  },
+  {
+    "path": "dwpose/dw-ll_ucoco_384.onnx",
+    "source_url": "https://huggingface.co/yzd-v/DWPose/resolve/main/dw-ll_ucoco_384.onnx?download=true",
+    "sha256": "724f4ff2439ed61afb86fb8a1951ec39c6220682803b4a8bd4f598cd913b1843",
+    "bytes": 134399116,
+    "download_kind": "Author-hosted model file"
+  },
+  {
+    "path": "gvhmr/checkpoints/gvhmr/gvhmr_siga24_release.ckpt",
+    "source_url": "https://huggingface.co/camenduru/GVHMR/resolve/main/gvhmr/gvhmr_siga24_release.ckpt?download=true",
+    "sha256": "4fae7da2de388d5da3514cb27a2d003f364dacb280e9cf88972b710e589c6b91",
+    "bytes": 163508011,
+    "official_url": "https://drive.google.com/file/d/1c9iCeKFN4Kr6cMPJ9Ss6Jdc3SZFnO5NP/view",
+    "download_kind": "Public mirror of the GVHMR-distributed checkpoint"
+  },
+  {
+    "path": "gvhmr/checkpoints/hmr2/epoch=10-step=25000.ckpt",
+    "source_url": "https://huggingface.co/camenduru/GVHMR/resolve/main/hmr2/epoch%3D10-step%3D25000.ckpt?download=true",
+    "sha256": "2dcf79638109781d1ae5f5c44fee5f55bc83291c210653feead9b7f04fa6f20e",
+    "bytes": 2709494041,
+    "official_url": "https://drive.google.com/file/d/1X5hvVqvqI9tvjUCb2oAlZxtgIKD9kvsc/view",
+    "download_kind": "Public mirror of the GVHMR-distributed checkpoint"
+  },
+  {
+    "path": "gvhmr/checkpoints/vitpose/vitpose-h-multi-coco.pth",
+    "source_url": "https://huggingface.co/camenduru/GVHMR/resolve/main/vitpose/vitpose-h-multi-coco.pth?download=true",
+    "sha256": "50e33f4077ef2a6bcfd7110c58742b24c5859b7798fb0eedd6d2215e0a8980bc",
+    "bytes": 2549075546,
+    "official_url": "https://drive.google.com/file/d/1sR8xZD9wrZczdDVo6zKscNLwvarIRhP5/view",
+    "download_kind": "Public mirror of the GVHMR-distributed checkpoint"
+  }
+]

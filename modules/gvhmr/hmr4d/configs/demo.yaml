@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - model: gvhmr/gvhmr_pl_demo
+  - network: gvhmr/relative_transformer
+  - endecoder: gvhmr/v1_amass_local_bedlam_cam
+
+pipeline:
+  _target_: hmr4d.model.gvhmr.pipeline.gvhmr_pipeline.Pipeline
+  args_denoiser3d: ${network}
+  args:
+    endecoder_opt: ${endecoder}
+    normalize_cam_angvel: True
+    weights: null
+    static_conf: null
+

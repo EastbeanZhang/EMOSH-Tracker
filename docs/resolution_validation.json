@@ -1,0 +1,987 @@
+{
+  "date": "2026-10-18",
+  "checks": [
+    "finite_parameters",
+    "camera_transform_inverse",
+    "intrinsic_transfer",
+    "source_frame_indices",
+    "frame_count",
+    "fps",
+    "preview_dimensions",
+    "per_frame_png_dimensions"
+  ],
+  "matrix": [
+    {
+      "case": "full_body.jpg",
+      "input_sha256": "03c5f139ff53d84a55dc6d3921978c0181b1b8bd0d3339d47c3912acefb2b9a3",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        736,
+        1024
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 202.153,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8523803136,
+        "peak_reserved": 8759803904
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion.mp4",
+      "input_sha256": "1067fa32076ee2508cd03a2b73e7480cd4a334e986de605dde90bfa038ae27bb",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        460,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 225.25,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8904507392
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head.jpg",
+      "input_sha256": "23fe692745c44b5c74b9abf99b1c1e98a2060867637a8165eea718c79b53e883",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        545,
+        660
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 222.891,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8523797504,
+        "peak_reserved": 8759803904
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body.jpg",
+      "input_sha256": "2eda402b1b69c697f88b639e7aec52aae3a0518ebf65bd4bbab8cb36aad5738f",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 141.706,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8523797504,
+        "peak_reserved": 8759803904
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body_motion.mp4",
+      "input_sha256": "a66503ef8e87a388f1abaea160f02bbc5ddc1a43a09e615e441881896d253271",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 8,
+      "fps": 25.0,
+      "elapsed_seconds": 140.477,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8902410240
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body.jpg",
+      "input_sha256": "03c5f139ff53d84a55dc6d3921978c0181b1b8bd0d3339d47c3912acefb2b9a3",
+      "size": [
+        640,
+        360
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        736,
+        1024
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 126.547,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8517732864,
+        "peak_reserved": 8759803904
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion.mp4",
+      "input_sha256": "1067fa32076ee2508cd03a2b73e7480cd4a334e986de605dde90bfa038ae27bb",
+      "size": [
+        640,
+        360
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        460,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 231.635,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8904507392
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head.jpg",
+      "input_sha256": "23fe692745c44b5c74b9abf99b1c1e98a2060867637a8165eea718c79b53e883",
+      "size": [
+        640,
+        360
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        545,
+        660
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 127.613,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8517727232,
+        "peak_reserved": 8759803904
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body.jpg",
+      "input_sha256": "2eda402b1b69c697f88b639e7aec52aae3a0518ebf65bd4bbab8cb36aad5738f",
+      "size": [
+        640,
+        360
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 100.072,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8517727232,
+        "peak_reserved": 8759803904
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body_motion.mp4",
+      "input_sha256": "a66503ef8e87a388f1abaea160f02bbc5ddc1a43a09e615e441881896d253271",
+      "size": [
+        640,
+        360
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 8,
+      "fps": 25.0,
+      "elapsed_seconds": 209.01,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8902410240
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body.jpg",
+      "input_sha256": "03c5f139ff53d84a55dc6d3921978c0181b1b8bd0d3339d47c3912acefb2b9a3",
+      "size": [
+        360,
+        640
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        736,
+        1024
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 101.159,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8517732864,
+        "peak_reserved": 8759803904
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion.mp4",
+      "input_sha256": "1067fa32076ee2508cd03a2b73e7480cd4a334e986de605dde90bfa038ae27bb",
+      "size": [
+        360,
+        640
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        460,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 195.327,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8904507392
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head.jpg",
+      "input_sha256": "23fe692745c44b5c74b9abf99b1c1e98a2060867637a8165eea718c79b53e883",
+      "size": [
+        360,
+        640
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        545,
+        660
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 227.763,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8517727232,
+        "peak_reserved": 8759803904
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body.jpg",
+      "input_sha256": "2eda402b1b69c697f88b639e7aec52aae3a0518ebf65bd4bbab8cb36aad5738f",
+      "size": [
+        360,
+        640
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 139.014,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8517727232,
+        "peak_reserved": 8759803904
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body_motion.mp4",
+      "input_sha256": "a66503ef8e87a388f1abaea160f02bbc5ddc1a43a09e615e441881896d253271",
+      "size": [
+        360,
+        640
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 8,
+      "fps": 25.0,
+      "elapsed_seconds": 170.203,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8902410240
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body.jpg",
+      "input_sha256": "03c5f139ff53d84a55dc6d3921978c0181b1b8bd0d3339d47c3912acefb2b9a3",
+      "size": [
+        832,
+        480
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        736,
+        1024
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 212.997,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8547718656,
+        "peak_reserved": 8757706752
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion.mp4",
+      "input_sha256": "1067fa32076ee2508cd03a2b73e7480cd4a334e986de605dde90bfa038ae27bb",
+      "size": [
+        832,
+        480
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        460,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 248.916,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8904507392
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head.jpg",
+      "input_sha256": "23fe692745c44b5c74b9abf99b1c1e98a2060867637a8165eea718c79b53e883",
+      "size": [
+        832,
+        480
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        545,
+        660
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 62.972,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8547713024,
+        "peak_reserved": 8757706752
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body.jpg",
+      "input_sha256": "2eda402b1b69c697f88b639e7aec52aae3a0518ebf65bd4bbab8cb36aad5738f",
+      "size": [
+        832,
+        480
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 142.845,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8547713024,
+        "peak_reserved": 8757706752
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body_motion.mp4",
+      "input_sha256": "a66503ef8e87a388f1abaea160f02bbc5ddc1a43a09e615e441881896d253271",
+      "size": [
+        832,
+        480
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 8,
+      "fps": 25.0,
+      "elapsed_seconds": 133.331,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8902410240
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body.jpg",
+      "input_sha256": "03c5f139ff53d84a55dc6d3921978c0181b1b8bd0d3339d47c3912acefb2b9a3",
+      "size": [
+        641,
+        479
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        736,
+        1024
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 156.848,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8530632192,
+        "peak_reserved": 8757706752
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion.mp4",
+      "input_sha256": "1067fa32076ee2508cd03a2b73e7480cd4a334e986de605dde90bfa038ae27bb",
+      "size": [
+        641,
+        479
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        460,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 232.044,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8904507392
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head.jpg",
+      "input_sha256": "23fe692745c44b5c74b9abf99b1c1e98a2060867637a8165eea718c79b53e883",
+      "size": [
+        641,
+        479
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        545,
+        660
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 123.297,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8530626560,
+        "peak_reserved": 8757706752
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body.jpg",
+      "input_sha256": "2eda402b1b69c697f88b639e7aec52aae3a0518ebf65bd4bbab8cb36aad5738f",
+      "size": [
+        641,
+        479
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 132.008,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8530626560,
+        "peak_reserved": 8757706752
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body_motion.mp4",
+      "input_sha256": "a66503ef8e87a388f1abaea160f02bbc5ddc1a43a09e615e441881896d253271",
+      "size": [
+        641,
+        479
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 8,
+      "fps": 25.0,
+      "elapsed_seconds": 184.242,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8902410240
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body.jpg",
+      "input_sha256": "03c5f139ff53d84a55dc6d3921978c0181b1b8bd0d3339d47c3912acefb2b9a3",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        736,
+        1024
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 161.34,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8830376448,
+        "peak_reserved": 9105833984
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion.mp4",
+      "input_sha256": "1067fa32076ee2508cd03a2b73e7480cd4a334e986de605dde90bfa038ae27bb",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        460,
+        640
+      ],
+      "frame_count": 8,
+      "fps": 30.0,
+      "elapsed_seconds": 190.287,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8833624576,
+        "peak_reserved": 9130999808
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head.jpg",
+      "input_sha256": "23fe692745c44b5c74b9abf99b1c1e98a2060867637a8165eea718c79b53e883",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        545,
+        660
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 203.256,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8830370816,
+        "peak_reserved": 9105833984
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body.jpg",
+      "input_sha256": "2eda402b1b69c697f88b639e7aec52aae3a0518ebf65bd4bbab8cb36aad5738f",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "elapsed_seconds": 78.308,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8830370816,
+        "peak_reserved": 9105833984
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body_motion.mp4",
+      "input_sha256": "a66503ef8e87a388f1abaea160f02bbc5ddc1a43a09e615e441881896d253271",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "frame_count": 8,
+      "fps": 25.0,
+      "elapsed_seconds": 209.171,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8833589760,
+        "peak_reserved": 9128902656
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head_motion.mp4",
+      "input_sha256": "9db7196d834f1948f3676d2702e9c48282ab3559f20e2d7121efde71ef0a0a12",
+      "size": [
+        832,
+        480
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        400,
+        480
+      ],
+      "frame_count": 8,
+      "fps": 23.98,
+      "elapsed_seconds": 208.867,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8902410240
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head_motion.mp4",
+      "input_sha256": "9db7196d834f1948f3676d2702e9c48282ab3559f20e2d7121efde71ef0a0a12",
+      "size": [
+        641,
+        479
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        400,
+        480
+      ],
+      "frame_count": 8,
+      "fps": 23.98,
+      "elapsed_seconds": 138.511,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8902410240
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head_motion.mp4",
+      "input_sha256": "9db7196d834f1948f3676d2702e9c48282ab3559f20e2d7121efde71ef0a0a12",
+      "size": [
+        360,
+        640
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        400,
+        480
+      ],
+      "frame_count": 8,
+      "fps": 23.98,
+      "elapsed_seconds": 120.426,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8902410240
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head_motion.mp4",
+      "input_sha256": "9db7196d834f1948f3676d2702e9c48282ab3559f20e2d7121efde71ef0a0a12",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        400,
+        480
+      ],
+      "frame_count": 8,
+      "fps": 23.98,
+      "elapsed_seconds": 199.785,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8833589760,
+        "peak_reserved": 9128902656
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head_motion.mp4",
+      "input_sha256": "9db7196d834f1948f3676d2702e9c48282ab3559f20e2d7121efde71ef0a0a12",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        400,
+        480
+      ],
+      "frame_count": 8,
+      "fps": 23.98,
+      "elapsed_seconds": 121.493,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8902410240
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head_motion.mp4",
+      "input_sha256": "9db7196d834f1948f3676d2702e9c48282ab3559f20e2d7121efde71ef0a0a12",
+      "size": [
+        640,
+        360
+      ],
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        400,
+        480
+      ],
+      "frame_count": 8,
+      "fps": 23.98,
+      "elapsed_seconds": 198.463,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8567100928,
+        "peak_reserved": 8902410240
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    }
+  ],
+  "native_examples": [
+    {
+      "case": "full_body.jpg",
+      "input_sha256": "03c5f139ff53d84a55dc6d3921978c0181b1b8bd0d3339d47c3912acefb2b9a3",
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        736,
+        1024
+      ],
+      "tracking_size": [
+        736,
+        1024
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "optimization_batch_size": 32,
+      "elapsed_seconds": 232.225,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8606771712,
+        "peak_reserved": 8799649792
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body.jpg",
+      "input_sha256": "2eda402b1b69c697f88b639e7aec52aae3a0518ebf65bd4bbab8cb36aad5738f",
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "tracking_size": [
+        320,
+        240
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "optimization_batch_size": 32,
+      "elapsed_seconds": 167.361,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8517381632,
+        "peak_reserved": 8768192512
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head.jpg",
+      "input_sha256": "23fe692745c44b5c74b9abf99b1c1e98a2060867637a8165eea718c79b53e883",
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        545,
+        660
+      ],
+      "tracking_size": [
+        545,
+        660
+      ],
+      "frame_count": 1,
+      "fps": null,
+      "optimization_batch_size": 32,
+      "elapsed_seconds": 204.843,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8540588032,
+        "peak_reserved": 8757706752
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "full_body_motion.mp4",
+      "input_sha256": "1067fa32076ee2508cd03a2b73e7480cd4a334e986de605dde90bfa038ae27bb",
+      "mode": "body",
+      "steps": 1251,
+      "source_size": [
+        460,
+        640
+      ],
+      "tracking_size": [
+        460,
+        640
+      ],
+      "frame_count": 48,
+      "fps": 30.0,
+      "optimization_batch_size": 32,
+      "elapsed_seconds": 286.932,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8574875136,
+        "peak_reserved": 8902410240
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "upper_body_motion.mp4",
+      "input_sha256": "a66503ef8e87a388f1abaea160f02bbc5ddc1a43a09e615e441881896d253271",
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        320,
+        240
+      ],
+      "tracking_size": [
+        320,
+        240
+      ],
+      "frame_count": 48,
+      "fps": 25.0,
+      "optimization_batch_size": 32,
+      "elapsed_seconds": 294.655,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8569570816,
+        "peak_reserved": 8910798848
+      },
+      "checks": "passed",
+      "representative_preview_reviewed": true
+    },
+    {
+      "case": "head_motion.mp4",
+      "input_sha256": "9db7196d834f1948f3676d2702e9c48282ab3559f20e2d7121efde71ef0a0a12",
+      "mode": "head",
+      "steps": 1251,
+      "source_size": [
+        400,
+        480
+      ],
+      "frame_count": 48,
+      "fps": 23.98,
+      "elapsed_seconds": 295.339,
+      "gpu_memory_bytes": {
+        "peak_allocated": 8569570816,
+        "peak_reserved": 8902410240
+      },
+      "tracking_size": [
+        400,
+        480
+      ],
+      "optimization_batch_size": 32
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "file": "full_body.png",
+    "input": "full_body.jpg",
+    "input_sha256": "03c5f139ff53d84a55dc6d3921978c0181b1b8bd0d3339d47c3912acefb2b9a3",
+    "head_only": false,
+    "steps": 1251,
+    "display_size": [
+      1200,
+      557
+    ],
+    "sha256": "ef7078389b104377b8c076946a84163c60e022a568121bfdf5f107a6e030839a"
+  },
+  {
+    "file": "full_body_motion.gif",
+    "input": "full_body_motion.mp4",
+    "input_sha256": "1067fa32076ee2508cd03a2b73e7480cd4a334e986de605dde90bfa038ae27bb",
+    "head_only": false,
+    "steps": 1251,
+    "display_size": [
+      828,
+      384
+    ],
+    "sha256": "d6c281fc9cd99bd90fa81af19bdd9d29df4b82cee40a9c7ee53653e712410614",
+    "display_frames": 16,
+    "source_frame_stride": 3,
+    "frame_duration_ms": 100
+  },
+  {
+    "file": "head.png",
+    "input": "head.jpg",
+    "input_sha256": "23fe692745c44b5c74b9abf99b1c1e98a2060867637a8165eea718c79b53e883",
+    "head_only": true,
+    "steps": 1251,
+    "display_size": [
+      1200,
+      484
+    ],
+    "sha256": "64ac3244d4b48902855774dfa815ea1cad32637b84164703669e47ab4c9db536"
+  },
+  {
+    "file": "upper_body.png",
+    "input": "upper_body.jpg",
+    "input_sha256": "2eda402b1b69c697f88b639e7aec52aae3a0518ebf65bd4bbab8cb36aad5738f",
+    "head_only": true,
+    "steps": 1251,
+    "display_size": [
+      960,
+      240
+    ],
+    "sha256": "d21002197d7adfea8e662af992610e20d5cb81ce12ae4db57bf6bb62118b8d0c"
+  },
+  {
+    "file": "upper_body_motion.gif",
+    "input": "upper_body_motion.mp4",
+    "input_sha256": "a66503ef8e87a388f1abaea160f02bbc5ddc1a43a09e615e441881896d253271",
+    "head_only": true,
+    "steps": 1251,
+    "display_size": [
+      828,
+      207
+    ],
+    "sha256": "e608a9a3f9a71637e0617ea6424e15a3bc7c74985f8e6abf3958e89e77502f5b",
+    "display_frames": 24,
+    "source_frame_stride": 2,
+    "frame_duration_ms": 80
+  },
+  {
+    "file": "head_motion.gif",
+    "input": "head_motion.mp4",
+    "input_sha256": "9db7196d834f1948f3676d2702e9c48282ab3559f20e2d7121efde71ef0a0a12",
+    "head_only": true,
+    "steps": 1251,
+    "display_size": [
+      900,
+      360
+    ],
+    "sha256": "f094ba022eeaa02a38a2ef81710d7e01de025589d298fe6e71c1427f106a9986",
+    "display_frames": 24,
+    "source_frame_stride": 2,
+    "frame_durations_ms": [
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "teaser/Teaser.pt",
+    "url": "https://drive.google.com/file/d/1SjYuCfDf5ElxK3VNvcF7KPBR57EIRDSY/view",
+    "bytes": 360042145,
+    "sha256": "c9bba0eb2cbe7e1d334df4836e690b3b63f5c7aef4fa6b0b4f46bfde96c69546"
+  },
+  {
+    "path": "lmk_203/landmark.onnx",
+    "url": "https://drive.google.com/file/d/1Zu9Vj4f14l7RGD5I5G3iHsL5vEc9YkLW/view",
+    "bytes": 114666491,
+    "sha256": "31d22a5041326c31f19b78886939a634a5aedcaa5ab8b9b951a1167595d147db"
+  }
+]

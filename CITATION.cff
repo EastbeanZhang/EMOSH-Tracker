@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use EMOSH-Tracker, please cite EMOSH."
+title: "EMOSH-Tracker"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Dongbin
+repository-code: "https://github.com/EastbeanZhang/EMOSH-Tracker"
+url: "https://eastbeanzhang.github.io/EMOSH/"
+preferred-citation:
+  type: conference-paper
+  title: "EMOSH: Expressive Motion and Shape Disentanglement for Human Animation"
+  authors:
+    - {family-names: Zhang, given-names: Dongbin}
+    - {family-names: Liu, given-names: Hao}
+    - {family-names: Dai, given-names: Binquan}
+    - {family-names: Chen, given-names: Kangjie}
+    - {family-names: Wang, given-names: Chuming}
+    - {family-names: Li, given-names: Chen}
+    - {family-names: Lyu, given-names: Jing}
+    - {family-names: Wang, given-names: Haoqian}
+  collection-title: "European Conference on Computer Vision (ECCV)"
+  year: 2026
+  url: "https://arxiv.org/abs/2606.28026"

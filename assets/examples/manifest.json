@@ -1,0 +1,94 @@
+{
+  "sources": [
+    {
+      "file": "dance_front.webm",
+      "source_page": "https://commons.wikimedia.org/wiki/File:WikiNgigel_%E2%80%93_Ragam_Gerak_Humbak_Moloh_(Tari_Bedana)_%E2%80%93_Bandar_Lampung_(2026).webm",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/WikiNgigel_%E2%80%93_Ragam_Gerak_Humbak_Moloh_%28Tari_Bedana%29_%E2%80%93_Bandar_Lampung_%282026%29.webm",
+      "bytes": 15854951,
+      "sha256": "ac2d6d9e5bc14c608e579f79582b9333645be53d364e664ebb13fa8c5858f511",
+      "author": "Xiangliangzai",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "file": "hello.ogv",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hello1.ogv",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Hello1.ogv",
+      "bytes": 88871,
+      "sha256": "19fa75a6e52e85db65716449bd03800d93a8fddbc62ee46a21640b51032b2ac5",
+      "author": "E5SUON",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "file": "portrait.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Commander_Eileen_Collins_-_GPN-2000-001177.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Commander_Eileen_Collins_-_GPN-2000-001177.jpg",
+      "bytes": 1215060,
+      "sha256": "752846bd7bc6496b66ee4aebf1799635b676ba15b2c06adb6cf7be6da1eb91bb",
+      "author": "Robert Markowitz / NASA",
+      "license": "Public domain",
+      "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA"
+    },
+    {
+      "file": "kelsey.webm",
+      "source_page": "https://svs.gsfc.nasa.gov/14934",
+      "download_url": "https://svs.gsfc.nasa.gov/vis/a010000/a014900/a014934/Kelsey_Young__SOTs_Artemis_II_1.webm",
+      "bytes": 68173650,
+      "sha256": "8a4441b32b632485b95e8888b01748ac52fa20c26e4cea26abdb8537e5a689c3",
+      "author": "NASA\u2019s Goddard Space Flight Center",
+      "license": "Public domain",
+      "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    }
+  ],
+  "files": [
+    {
+      "file": "full_body.jpg",
+      "bytes": 252767,
+      "sha256": "03c5f139ff53d84a55dc6d3921978c0181b1b8bd0d3339d47c3912acefb2b9a3",
+      "source": "dance_front.webm",
+      "changes": "Frame 12 (zero-based); crop [304,36,1040,1060]; JPEG, 736x1024.",
+      "head_only": false
+    },
+    {
+      "file": "full_body_motion.mp4",
+      "bytes": 1006594,
+      "sha256": "1067fa32076ee2508cd03a2b73e7480cd4a334e986de605dde90bfa038ae27bb",
+      "source": "dance_front.webm",
+      "changes": "Source frames 210..304 inclusive, stride 2 (48 frames); 60 FPS resampled to 30 FPS; crop [304,36,1040,1060]; uniformly resize to 460x640; H.264 without audio.",
+      "head_only": false
+    },
+    {
+      "file": "head.jpg",
+      "bytes": 102017,
+      "sha256": "23fe692745c44b5c74b9abf99b1c1e98a2060867637a8165eea718c79b53e883",
+      "source": "portrait.jpg",
+      "changes": "Crop [680,250,1770,1570]; uniformly resize to 545x660; JPEG.",
+      "head_only": true
+    },
+    {
+      "file": "upper_body.jpg",
+      "bytes": 9356,
+      "sha256": "2eda402b1b69c697f88b639e7aec52aae3a0518ebf65bd4bbab8cb36aad5738f",
+      "source": "hello.ogv",
+      "changes": "Frame 12 (zero-based); JPEG, original 320x240 dimensions.",
+      "head_only": true
+    },
+    {
+      "file": "upper_body_motion.mp4",
+      "bytes": 156794,
+      "sha256": "a66503ef8e87a388f1abaea160f02bbc5ddc1a43a09e615e441881896d253271",
+      "source": "hello.ogv",
+      "changes": "First 48 frames at 25 FPS; original 320x240 dimensions; H.264 without audio.",
+      "head_only": true
+    },
+    {
+      "file": "head_motion.mp4",
+      "bytes": 643573,
+      "sha256": "9db7196d834f1948f3676d2702e9c48282ab3559f20e2d7121efde71ef0a0a12",
+      "source": "kelsey.webm",
+      "head_only": true,
+      "changes": "Source frames 480..527 inclusive (48 frames); reported source FPS 23.98; crop [580,40,1380,1000]; uniformly resize to 400x480; H.264 without audio."
+    }
+  ]
+}
