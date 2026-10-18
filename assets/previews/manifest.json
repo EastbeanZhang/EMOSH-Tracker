@@ -140,7 +140,7 @@
       "input",
       "mesh"
     ],
-    "layout": "Equal-sized, top-aligned input and mesh panels with aspect-preserving black padding on a 720x456 gallery tile.",
+    "layout": "Input and mesh centered horizontally and vertically in equal-sized panels with aspect-preserving black padding on a 720x456 gallery tile.",
     "display_source": "full_body_motion.gif",
     "display_source_sha256": "d6c281fc9cd99bd90fa81af19bdd9d29df4b82cee40a9c7ee53653e712410614",
     "panel_size": [
@@ -193,7 +193,7 @@
       "input",
       "mesh"
     ],
-    "layout": "Equal-sized, top-aligned input and mesh panels with aspect-preserving black padding on a 720x456 gallery tile.",
+    "layout": "Input and mesh centered horizontally and vertically in equal-sized panels with aspect-preserving black padding on a 720x456 gallery tile.",
     "display_source": "full_body_motion_2.gif",
     "display_source_sha256": "a4b59123753f944a06f602f1798237e83e7190059be73251c2b08da3445e6bec",
     "panel_size": [
@@ -221,7 +221,7 @@
       720,
       456
     ],
-    "sha256": "06021040537970f91aa990122e8f74da20373b844ac814cf49d31063e2fed096",
+    "sha256": "338c066a9dd3e839861f22b749cc47d64d321055a6c6961594db6fd4ac637b2b",
     "display_frames": 24,
     "source_frame_stride": 2,
     "frame_durations_ms": [
@@ -254,7 +254,7 @@
       "input",
       "mesh"
     ],
-    "layout": "Equal-sized, top-aligned input and mesh panels with aspect-preserving black padding on a 720x456 gallery tile.",
+    "layout": "Input and mesh centered horizontally and vertically in equal-sized panels with aspect-preserving black padding on a 720x456 gallery tile.",
     "display_source": "upper_body_motion.gif",
     "display_source_sha256": "e608a9a3f9a71637e0617ea6424e15a3bc7c74985f8e6abf3958e89e77502f5b",
     "panel_size": [
@@ -315,7 +315,7 @@
       "input",
       "mesh"
     ],
-    "layout": "Equal-sized, top-aligned input and mesh panels with aspect-preserving black padding on a 720x456 gallery tile.",
+    "layout": "Input and mesh centered horizontally and vertically in equal-sized panels with aspect-preserving black padding on a 720x456 gallery tile.",
     "display_source": "head_motion.gif",
     "display_source_sha256": "f094ba022eeaa02a38a2ef81710d7e01de025589d298fe6e71c1427f106a9986",
     "panel_size": [
