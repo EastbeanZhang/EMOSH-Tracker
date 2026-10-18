@@ -104,5 +104,184 @@
       80,
       90
     ]
+  },
+  {
+    "file": "gallery_full_body.gif",
+    "input": "full_body_motion.mp4",
+    "input_sha256": "1067fa32076ee2508cd03a2b73e7480cd4a334e986de605dde90bfa038ae27bb",
+    "head_only": false,
+    "steps": 1251,
+    "display_size": [
+      720,
+      456
+    ],
+    "sha256": "7b12b5cb370d9f479803663831edb30a8630ea7e8460e463b03970f5c7c2ac42",
+    "display_frames": 16,
+    "source_frame_stride": 3,
+    "frame_durations_ms": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "panels": [
+      "input",
+      "mesh"
+    ],
+    "layout": "Aspect-preserving fit on a 720x456 gallery tile with labels."
+  },
+  {
+    "file": "gallery_full_body_2.gif",
+    "input": "full_body_motion_2.mp4",
+    "input_sha256": "90a449a7b8e55eab4f285d204f324db29b6888ecd5e689323d4ed4c4bcb7368d",
+    "head_only": false,
+    "steps": 1251,
+    "display_size": [
+      720,
+      456
+    ],
+    "sha256": "f64510ff670f712a91b3e8080fecf7e942f219fe2ffa2321cba8f8cc8a20dcea",
+    "display_frames": 16,
+    "source_frame_stride": 3,
+    "frame_durations_ms": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "panels": [
+      "input",
+      "mesh"
+    ],
+    "layout": "Aspect-preserving fit on a 720x456 gallery tile with labels."
+  },
+  {
+    "file": "gallery_upper_body.gif",
+    "input": "upper_body_motion.mp4",
+    "input_sha256": "a66503ef8e87a388f1abaea160f02bbc5ddc1a43a09e615e441881896d253271",
+    "head_only": true,
+    "steps": 1251,
+    "display_size": [
+      720,
+      456
+    ],
+    "sha256": "f7c157796c7fcaba04b90edcf8428da6c6f595ad2b6df001453f8b6bdbc237ea",
+    "display_frames": 24,
+    "source_frame_stride": 2,
+    "frame_durations_ms": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80
+    ],
+    "panels": [
+      "input",
+      "mesh"
+    ],
+    "layout": "Aspect-preserving fit on a 720x456 gallery tile with labels."
+  },
+  {
+    "file": "gallery_portrait.gif",
+    "input": "head_motion.mp4",
+    "input_sha256": "9db7196d834f1948f3676d2702e9c48282ab3559f20e2d7121efde71ef0a0a12",
+    "head_only": true,
+    "steps": 1251,
+    "display_size": [
+      720,
+      456
+    ],
+    "sha256": "21daf691743277bd4bf67465d2acec920f416c22e33a3d3ffd7ce3d61362c1fc",
+    "display_frames": 24,
+    "source_frame_stride": 2,
+    "frame_durations_ms": [
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80,
+      80,
+      90,
+      80
+    ],
+    "panels": [
+      "input",
+      "mesh"
+    ],
+    "layout": "Aspect-preserving fit on a 720x456 gallery tile with labels."
+  },
+  {
+    "file": "full_body_motion_2.gif",
+    "input": "full_body_motion_2.mp4",
+    "input_sha256": "90a449a7b8e55eab4f285d204f324db29b6888ecd5e689323d4ed4c4bcb7368d",
+    "head_only": false,
+    "steps": 1251,
+    "display_size": [
+      828,
+      460
+    ],
+    "sha256": "a4b59123753f944a06f602f1798237e83e7190059be73251c2b08da3445e6bec",
+    "display_frames": 16,
+    "source_frame_stride": 3,
+    "frame_duration_ms": 100
   }
 ]
