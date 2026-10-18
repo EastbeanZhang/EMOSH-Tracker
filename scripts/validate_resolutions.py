@@ -18,6 +18,7 @@ CASES = [
     ("head.jpg", True),
     ("head_motion.mp4", True),
     ("full_body_motion.mp4", False),
+    ("full_body_motion_2.mp4", False),
     ("upper_body_motion.mp4", True),
 ]
 
