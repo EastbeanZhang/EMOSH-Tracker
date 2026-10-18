@@ -89,6 +89,14 @@
       "source": "kelsey.webm",
       "head_only": true,
       "changes": "Source frames 480..527 inclusive (48 frames); reported source FPS 23.98; crop [580,40,1380,1000]; uniformly resize to 400x480; H.264 without audio."
+    },
+    {
+      "file": "full_body_motion_2.mp4",
+      "bytes": 990854,
+      "sha256": "90a449a7b8e55eab4f285d204f324db29b6888ecd5e689323d4ed4c4bcb7368d",
+      "source": "dance_front.webm",
+      "head_only": false,
+      "changes": "Source frames 210..304 inclusive, stride 2 (48 frames); 60 FPS resampled to 30 FPS; crop the second performer at [1000,60,1600,1060]; uniformly resize to 384x640; H.264 without audio."
     }
   ]
 }
