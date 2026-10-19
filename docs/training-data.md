@@ -20,13 +20,20 @@ Inspect `results/video/tracking.mp4`. Keep `input/`, `optim_tracking.npy`, `id_s
 Install [EMOSH](https://github.com/EastbeanZhang/EMOSH/blob/main/docs/installation.md), activate its environment and run from its repository:
 
 ```bash
-python prepare_dataset.py --tracking /path/to/tracker/results/video \
-  --output data/train --id clip_0001
+python prepare_dataset.py --manifest clips.jsonl \
+  --output data/train --workers 8 --resume
 python train.py --dataset data/train --model-path models/wan-base \
   --assets assets --output outputs/train --checkpoint-offload
 ```
 
-The converter uses the original fixed training prompt. Repeat the packing command with a unique ID for each video; add `--split valid` for held-out records. The standard training clip contains 77 frames. Keep at least nine consecutive frames for temporal conditioning.
+Create `clips.jsonl` with one tracked clip per line; paths are relative to the manifest file or absolute:
+
+```jsonl
+{"id":"clip_0001","tracking":"results/video_0001"}
+{"id":"clip_0002","tracking":"results/video_0002","split":"valid"}
+```
+
+The converter uses the original fixed training prompt. It packs clips in parallel, updates an incremental SQLite index and resumes completed clips after checking their source metadata and packed file sizes. Failed records are logged for retry. For one clip, `python prepare_dataset.py --tracking /path/to/result --output data/train --id clip_0001` remains available. The standard training clip contains 77 frames; keep at least nine consecutive frames for temporal conditioning.
 
 EMOSH accepts native dimensions, Wan-Animate pixel area budgets and custom canvases. Its loader transforms RGB frames, camera intrinsics and crop matrices together, so changing the training size does not require tracking the video again.
 
