@@ -126,9 +126,7 @@ def main(argv=None):
         import torch
 
         if not args.device.startswith("cuda") or not torch.cuda.is_available():
-            raise RuntimeError(
-                "Tracking requires a CUDA GPU; geometry and media tests run on a CPU"
-            )
+            raise RuntimeError("Tracking requires a CUDA GPU")
         torch.cuda.set_device(args.device)
         args.save_images = bool(args.save_images)
         args.visualize |= args.save_images

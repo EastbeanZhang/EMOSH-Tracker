@@ -32,7 +32,7 @@ Tracks expressive body, hand, and face motion from full-body, upper-body, and po
 2. **Faster fitting.** Approximately **1.9×** faster on the same 436-frame video: **223 s** versus **424 s** for GUAVA/EHM-Tracker.
 3. **Flexible input resolutions.** Supports square, portrait, and landscape inputs at native or custom resolutions, preserving aspect ratio and output dimensions.
 
-[Method and comparison details](docs/comparison.md) · [Tested inputs and limitations](docs/validation.md)
+[Method and comparison details](docs/comparison.md) · [Runtime options and limitations](docs/running.md)
 
 ## Pipeline
 
@@ -44,7 +44,7 @@ GVHMR, HaMeR, and TEASER initialize body, hands, and face. DWPose and dense faci
 
 **Linux + NVIDIA CUDA GPU · Python 3.10.** The verified isolated environment uses PyTorch 2.9.1/CUDA 13.0 and PyTorch3D 0.7.9.
 
-**GPU memory:** approximately **10.70 GiB sampled process peak** on a **15-second, 450-frame 1920×1080 video at 30 FPS** (`--head-only`, 32-frame windows, 1,251 steps per window). [Measurement details](docs/validation.md#long-video-memory-test). Leave additional memory headroom.
+**GPU memory:** approximately **10.70 GiB sampled process peak** on a **15-second, 450-frame 1920×1080 video at 30 FPS** (`--head-only`, 32-frame windows, 1,251 steps per window). [Memory usage](docs/running.md#memory-usage).
 
 1. Follow [installation](docs/installation.md) to create the environment and install the pinned dependencies.
 2. Download the licensed models using the [file list and official download links](docs/models.md).

@@ -2,7 +2,7 @@
 
 The release keeps the research result names `optim_tracking.npy`, `id_share_params.npy`, and `init_tracking.npy`. These are NumPy dictionary containers, loaded with `np.load(path, allow_pickle=True).item()`. Only load trusted files.
 
-A result contains one `frame_000000` entry per decoded source frame, in source order. Detection failures stop a run instead of removing frames. `metadata.json` records the source dimensions, tracking canvas, frame count, FPS, source indices, fitting mode, and completion status. Image runs have `fps: null`.
+A result contains one `frame_000000` entry per decoded source frame, in source order. Detection failures stop a run instead of removing frames. `metadata.json` records the input filename, source dimensions, tracking canvas, frame count, FPS, source indices, fitting mode, and completion status. Image runs have `fps: null`. The input's absolute path is not stored.
 
 `elapsed_seconds` measures the run through the requested exports. `gpu_memory_bytes.peak_allocated` and `peak_reserved` record this process's PyTorch CUDA allocator peaks; they exclude CPU models and other processes on the GPU.
 

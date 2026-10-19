@@ -27,4 +27,4 @@ These values are quoted from the paper's evaluation. They are not a fresh benchm
 - An inference-only dependency set: matting, training/dataset preparation, LMDB output, and historical tracker variants are omitted.
 - Reproducible model-file checks, installation instructions, licensed examples, and geometry/rendering/end-to-end validation.
 
-Resolution support is an engineering extension in this release. The paper's square-resolution generation evaluation should not be read as an arbitrary-resolution tracker benchmark. See [validation.md](validation.md) for the tested release behavior and remaining limitations.
+Resolution support is an engineering extension in this release. See [runtime options and limitations](running.md) for input geometry, fitting windows and memory usage.

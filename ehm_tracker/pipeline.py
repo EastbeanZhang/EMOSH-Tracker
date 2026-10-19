@@ -192,7 +192,7 @@ def track_file(path, args):
             tracker.visualize(images, results, identity, destination, fps)
         metadata = {
             "format_version": 2,
-            "input": str(Path(path).resolve()),
+            "input": Path(path).name,
             "source_size": list(source_size),
             "tracking_size": list(size),
             "fps": fps,

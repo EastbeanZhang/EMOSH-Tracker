@@ -1,6 +1,6 @@
 # Installation
 
-Tracking requires Linux and an NVIDIA CUDA GPU. Python 3.10 is the intended runtime. A **15-second portrait video (450 frames at 30 FPS)** with **1920×1080 input and fitting dimensions** reached approximately **10.70 GiB sampled process GPU memory**, using `--head-only`, 32-frame windows and 1,251 steps per window. PyTorch recorded **8.22 GiB allocated / 8.51 GiB reserved**. Allow additional memory headroom for your input and configuration. See the [complete measurement and reproduction commands](validation.md#long-video-memory-test).
+Tracking requires Linux and an NVIDIA CUDA GPU. Python 3.10 is the intended runtime. See [memory usage](running.md#memory-usage) for a measured 15-second, 1920×1080 example.
 
 ```bash
 git clone https://github.com/EastbeanZhang/EMOSH-Tracker.git

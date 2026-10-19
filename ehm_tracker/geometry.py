@@ -87,13 +87,3 @@ def get_bounding_box(points, padding=1.4, as_square=True):
         extent[:] = extent.max()
     extent *= padding
     return {"bbox": np.concatenate([center - extent / 2, center + extent / 2]).astype(np.float32)}
-
-
-def project_points(points, intrinsics, world_to_camera=None):
-    """Reference pinhole projection used by the geometry regression tests."""
-    points = np.asarray(points)
-    if world_to_camera is not None:
-        homogeneous = np.concatenate([points, np.ones_like(points[..., :1])], axis=-1)
-        points = np.matmul(homogeneous, np.swapaxes(world_to_camera, -1, -2))[..., :3]
-    pixels = np.matmul(points, np.swapaxes(intrinsics, -1, -2))
-    return pixels[..., :2] / pixels[..., 2:3]

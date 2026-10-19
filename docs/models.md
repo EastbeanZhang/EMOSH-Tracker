@@ -77,8 +77,6 @@ Exact sizes, source links and SHA-256 hashes for these two downloads are recorde
 sha256sum assets/teaser/Teaser.pt assets/lmk_203/landmark.onnx
 ```
 
-Complete tracking was validated with all 26 required files in the clean environment documented in [validation.md](validation.md). The original research snapshot's truncated TEASER files were replaced with the complete official downloads; source files were preserved.
-
-[Network checkpoint hashes and source URLs](../assets/network_model_manifest.json) record the six large initialization files used for validation. HaMeR and DWPose came from author-hosted files; the GVHMR files came from the listed public mirror of its distribution. Prefer the official download links above when available. Hashes identify tested files, not a separate license grant.
+[Network checkpoint hashes and source URLs](../assets/network_model_manifest.json) identify the six large initialization files. Prefer the official download links above when available. Hashes identify files, not a separate license grant.
 
 The previous EHM-Tracker uses an exported `pretrained/teaser/TEASER_lmk_2.onnx` model. This release loads the original PyTorch encoder checkpoint above; the old export is not a replacement for `Teaser.pt`.
