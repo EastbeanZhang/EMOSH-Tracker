@@ -4,11 +4,16 @@
 
 ### Official Human Tracking Implementation for EMOSH (ECCV 2026)
 
-[Project Page](https://eastbeanzhang.github.io/EMOSH/) · [Paper](https://arxiv.org/abs/2606.28026) · [Installation](docs/installation.md) · [Models](docs/models.md)
+Tracks expressive body, hand, and face motion from full-body, upper-body, and portrait images or videos, with joint fitting and flexible input resolutions.
+
+<p>
+  <a href="https://eastbeanzhang.github.io/EMOSH/"><img src="https://img.shields.io/badge/Project_Page-2563EB?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Project Page"></a>
+  <a href="https://arxiv.org/abs/2606.28026"><img src="https://img.shields.io/badge/Paper-30343B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="Paper"></a>
+  <a href="https://github.com/EastbeanZhang/EMOSH"><img src="https://img.shields.io/badge/EMOSH-30343B?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="EMOSH repository"></a>
+  <a href="https://github.com/Pixel-Talk/EHM-Tracker"><img src="https://img.shields.io/badge/EHM--Tracker-30343B?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="EHM-Tracker repository"></a>
+</p>
 
 </div>
-
-Tracks expressive body, hand, and face motion from full-body, upper-body, and portrait images or videos, with joint fitting and flexible input resolutions.
 
 <p align="center">
   <a href="assets/previews/full_body_motion.gif"><img src="assets/previews/gallery_full_body.gif" width="49%" alt="Full-body tracking, first performer"></a>
