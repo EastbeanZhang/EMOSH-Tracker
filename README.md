@@ -92,6 +92,10 @@ python track.py --input assets/examples/head_motion.mp4 \
 
 The person is never stretched or cropped to fill the canvas. Initializer networks retain their fixed-size internal crops; predictions and cameras map back to the selected canvas and source image. Odd-sized videos use H.264 4:4:4; per-frame PNGs are also available.
 
+## Training data for EMOSH
+
+Export tracked frames with `--save-images`, then use EMOSH's dataset converter and training code. The [video-to-training workflow](docs/training-data.md) covers packing records, held-out splits and different image dimensions.
+
 ## Acknowledgements and terms
 
 Built on [EHM-Tracker / GUAVA](https://github.com/Pixel-Talk/EHM-Tracker), [GVHMR](https://github.com/zju3dv/GVHMR), [HaMeR](https://github.com/geopavlakos/hamer), [TEASER](https://github.com/Pixel-Talk/TEASER), [DWPose](https://github.com/IDEA-Research/DWPose), [SMPL-X](https://smpl-x.is.tue.mpg.de/), [FLAME](https://flame.is.tue.mpg.de/), [MANO](https://mano.is.tue.mpg.de/), MediaPipe, ViTPose, and PyTorch3D.

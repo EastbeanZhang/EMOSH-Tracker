@@ -27,7 +27,7 @@ The tracking camera's principal point is the canvas center. The initializer esti
 
 ## Compatibility
 
-The EHM pose/shape groups retain the research parameter layout. New camera matrices and `metadata.json` are additional fields. The release does not create the old image LMDB or training-dataset index. Consumers that assumed 512×512 crops, constant 30 FPS, or an LMDB must use the recorded dimensions/FPS and optional PNG exports instead. Dropping frames in downstream applications requires keeping the source frame-index mapping.
+The EHM pose/shape groups retain the research parameter layout. New camera matrices and `metadata.json` are additional fields. [EMOSH's dataset converter](https://github.com/EastbeanZhang/EMOSH/blob/main/prepare_dataset.py) packs the saved input PNGs and tracking parameters into the training LMDB and index files; see the [training-data workflow](training-data.md). Other consumers should use the recorded dimensions/FPS and keep source frame indices when selecting frames.
 
 ## Completion and previews
 
