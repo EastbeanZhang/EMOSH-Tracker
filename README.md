@@ -9,6 +9,7 @@ Tracks expressive body, hand, and face motion from full-body, upper-body, and po
 <p>
   <a href="https://eastbeanzhang.github.io/EMOSH/"><img src="https://img.shields.io/badge/Project_Page-2563EB?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Project Page"></a>
   <a href="https://arxiv.org/abs/2606.28026"><img src="https://img.shields.io/badge/Paper-30343B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="Paper"></a>
+  <a href="https://www.youtube.com/watch?v=u_C6ugqoNKM"><img src="https://img.shields.io/badge/Demo-30343B?style=for-the-badge&amp;logo=youtube&amp;logoColor=white" alt="EMOSH-Tracker video demo"></a>
   <a href="https://github.com/EastbeanZhang/EMOSH"><img src="https://img.shields.io/badge/EMOSH-30343B?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="EMOSH repository"></a>
   <a href="https://github.com/Pixel-Talk/EHM-Tracker"><img src="https://img.shields.io/badge/EHM--Tracker-30343B?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="EHM-Tracker repository"></a>
 </p>
